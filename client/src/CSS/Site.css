@@ -7,22 +7,26 @@ margin:0px
 /* Split the screen in half */
 .mainContainer {
     background-color: white ;
- 
+    display: flex;
+    height:100vh;
+    
    }
    /* 
    Control the left side */
    .leftContainer {
     background-color: #A8DADC ;
+    float: left;
+    width: 50%;
+    height:auto;
+    
 
    }
-   .tracker, .savingPots, .Reports, .tips{
-    background-color: #457B9D;
-    display: inline-block;
-    width: 100px;
-   }
+
    /* Control the right side */
-   .right {
+   .rightContainer {
     background-color: #F1FAEE ;
-
+    float: right;
+    width: 50%;
+    height:auto;
    }
 
