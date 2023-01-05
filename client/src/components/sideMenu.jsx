@@ -6,4 +6,4 @@ const sideMenu = () => {
   )
 }
 
-export default sideMenufce
+export default sideMenu;
