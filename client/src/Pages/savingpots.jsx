@@ -1,9 +1,13 @@
 import React from 'react'
 
-const savingpots = () => {
-  return (
-    <div>savingpots</div>
-  )
+function savingpots() {
+  return <>
+      <div>yoooooo</div>
+     
+  </>
+        
+   
+    
 }
 
-export default savingpots
+export default savingpots;

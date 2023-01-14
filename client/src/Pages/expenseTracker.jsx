@@ -1,8 +1,13 @@
 import React from 'react'
+import SideMenu from '../components/sideMenu'
 
-const expenseTracker = () => {
+function expenseTracker() {
   return (
-    <div>ExpenseTracker</div>
+    <>
+
+<div>expenseTracker</div>
+    </>
+   
   )
 }
 

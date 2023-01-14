@@ -1,9 +1,9 @@
 import React from 'react'
 
-const registration = () => {
+function registration() {
   return (
     <div>registration</div>
   )
 }
 
-export default registration;
+export default registration

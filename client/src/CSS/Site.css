@@ -8,13 +8,14 @@ margin:0px
 .mainContainer {
     background-color: white ;
     display: flex;
-    height:100vh;
+    min-height: 100vh;
+    width:100%;
     
    }
    /* 
    Control the left side */
    .leftContainer {
-    background-color: #A8DADC ;
+    background-color: #1D3557;
     float: left;
     width: 50%;
     height:auto;
@@ -24,9 +25,11 @@ margin:0px
 
    /* Control the right side */
    .rightContainer {
-    background-color: #F1FAEE ;
+    background-color: white ;
     float: right;
     width: 50%;
     height:auto;
    }
 
+
+  
