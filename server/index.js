@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -19,8 +20,8 @@ mongoose.set('strictQuery', true)
 
 // This is where your API is making its initial connection to the database
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-  useNewUrlParser: true,
+mongoose.connect("mongodb+srv://FinanceApp:TaylorC@cluster0.hbsjpjy.mongodb.net/FinAlly?retryWrites=true&w=majority",{
+useNewUrlParser: true,
 });
 
 
