@@ -21,7 +21,7 @@ this.state.socket.on("send-msg-response", async (msg) => {
             await this.setState({
                 messageList: [...this.state.messageList]
             })
-this._sendMessage(msg);
+this._sendMessage(msg)
         })
 }
 async _onMessageWasSent(message) {
@@ -42,7 +42,28 @@ _sendMessage(text) {
             })
         }
     }
-render() {
+    async _onMessageWasReceived(message) {
+        await this.setState({
+            messageList: [...this.state.messageList, message]
+        })    
+        
+this._sendMessage("Sure, what more information do you need?");
+    await this.state.socket.emit('secondary-msg', { msg: message.data.text, room: this.state.room });
+    }
+
+    _sendResponse(text) {
+        if (text.length > 0) {
+            this.setState({
+                messageList: [...this.state.messageList, {
+                    author: 'them',
+                    type: 'text',
+                    data: { text }
+                },]
+            })
+        }
+    }
+
+    render() {
 return (
             <div id="chatbox" className="chatbox">
                 <Launcher
@@ -58,4 +79,5 @@ return (
         );
     }
 }
-export default ChatBotRobot;
+
+export default ChatBotRobot
