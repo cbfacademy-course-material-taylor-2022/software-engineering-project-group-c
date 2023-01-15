@@ -1,8 +1,9 @@
 import React from 'react'
+import '../CSS/savingPots.css'
 
 function savingpots() {
   return <>
-      <div>yoooooo</div>
+      <div className='savingContainer'>hello</div>
      
   </>
         

@@ -1,9 +1,10 @@
-import React, { children } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import * as FaIcons from "react-icons/fa"
 import * as HiIcons from "react-icons/hi"
 import '../CSS/Site.css'
-import Logo from './logo'
+import '../CSS/sideBar.css'
+import SideBarLogo from "./sideBarLogo"
 
 
 
@@ -31,28 +32,32 @@ const sideMenu = ({children}) => {
                 name:"Contact Us",
                 icon: <FaIcons.FaHandsHelping />
               },
-
-
+              {
+                path:"/",
+                name:"Log Out",
+                icon: <FaIcons.FaSignOutAlt />
+              },
      ]
-     
-     
+          
      return(
-        <div className='mainContainer'>
+        <div className='pageContainer'>       
           <div className="sideBar">
             <div className='menuLogo'> 
-               <Logo />
+                <SideBarLogo />
             </div>
-            {
-              menuItem.map((item,index)=>(
-                <NavLink to={item.path} key={index} className= "link" activeclassname="active">
-                   <div className='icon'>{item.icon}</div>
-                   <div className='link_name'>{item.name}</div>
-                </NavLink>
-              ))
-            }
-              
-          </div>
-          <main> {children}</main>
+            <div className='welcome'>
+              <h3>Welcome Back!!</h3>
+            </div>  
+              {
+                menuItem.map((item,index)=>(
+                  <NavLink to={item.path} key={index} className= "link" activeclassname="active">
+                    <div className='icon'>{item.icon}</div>
+                    <div className='link_name'>{item.name}</div>
+                  </NavLink>
+                ))
+              }         
+            </div>
+          <main> {children} </main>  
         </div>
       
      )

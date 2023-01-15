@@ -7,7 +7,10 @@ import SavingPots from './Pages/savingpots';
 import Registration from './Pages/registration';
 import ContactUs from './Pages/contactUs';
 import ExpenseTacker from './Pages/expenseTracker';
+import Reports from './Pages/reports'
 import SideMenu from './components/sideMenu';
+
+/** Need to refactor how sideMenu is called so that it doesn't have to be called multiple times  **/
 
 function App() {
   return (
@@ -17,18 +20,21 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Login" element={<Login />}/>
-          </Routes>
-          
-          <SideMenu>  
-          <Routes>
-            <Route path="/SavingPots" element={<SavingPots/>}/>
             <Route path="/Registration" element={<Registration/>}/>
-            <Route path="/ExpenseTracker" element={<ExpenseTacker/>}/>
-            <Route path="/Reports" element={<ExpenseTacker/>}/>
+            <Route path="/SavingPots" element={<div>
+              <SideMenu />
+              <SavingPots/>
+            </div>}/>            
+            <Route path="/ExpenseTracker" element={<div>
+              <SideMenu />
+              <ExpenseTacker/>
+            </div> }/>
+            <Route path="/Reports" element={<div>
+              <SideMenu />
+              <Reports />
+            </div>}/>
             <Route path="/ContactUs" element={<ContactUs/>}/>
           </Routes>
-          </SideMenu>
-         
     </Router>
 
   );

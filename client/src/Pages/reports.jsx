@@ -1,9 +1,12 @@
 import React from "react";
-import logo from "../components/logo";
-import sideMenu from "../components/sideMenu";
+import '../CSS/Site.css'
+
+function Reports (props){
+    return (
+    
+     <div>{props.name} Reports</div>
+        
+)};
 
 
-function Heading (props){
-    return <h1>{props.name}'s Reports</h1>
-}
-
+export default Reports

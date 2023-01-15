@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import "../CSS/Site.css"
 import "../CSS/Home.css"
 import * as FavIcons from 'react-icons/fa'
+import LogoBanner from '../components/logoBanner'
+import Button from '../components/button'
 
 
 const home = () => {
@@ -23,23 +25,20 @@ const home = () => {
             <div className='Tips'> <img src="imgs/ExpenseTracker.png" alt="Tracker"/> </div>
           </div>  
           <div className='contactRouteLink'>
-            <Link to='/contactUs' className='home_btn'> Contact Us </Link>
+            <Link to='/contactUs' > <Button name='Contact Us' /> </Link>
           </div>
           
         </div> 
 
         <div className='rightContainer'>
-         <div className='logo'>
-            <img className='imglogo' src="imgs/logo.png" alt="Tracker"/>
-            <p className='logoSlogan'>Welcome to Fin.Ally your financial friend</p>
-         </div>
-          
+   
+          <LogoBanner />
         
           <div className='loginRouteLink'>
-             <Link to='/Login' className='home_btn1'> Login</Link>
+             <Link to='/Login'> <Button name='Login' /></Link>
           </div>   
           <div className='regRouteLink'>
-             <Link to='/Registration' className='home_btn'> Register</Link>
+             <Link to='/Registration' > <Button className='btn1' name='Registration' /></Link>
           </div>
           <div className='homeIcons'>
           <FavIcons.FaInstagram className='icons'/>

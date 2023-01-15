@@ -1,9 +1,8 @@
 import React from 'react'
 
-
 const logo = () => {
   return (
-    <img className='imglogo' src="imgs/logo.png" alt="Tracker"/>
+    <img className='imglogo' src="imgs/logo.png" alt=""/>
   )
 }
 
