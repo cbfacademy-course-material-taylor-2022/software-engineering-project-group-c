@@ -1,43 +1,80 @@
 
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from './Pages/home';
-import Login from './Pages/login';
-import SavingPots from './Pages/savingpots';
-import Registration from './Pages/registration';
-import ContactUs from './Pages/contactUs';
-import ExpenseTacker from './Pages/expenseTracker';
-import Reports from './Pages/reports'
+import {BrowserRouter as Router, Routes, Route, Navigate, Outlet, createBrowserRouter, RouterProvider} from "react-router-dom";
+import Home from './Pages/Home/home';
+import Login from './Pages/Login/login';
+import Registration from './Pages/Registration/registration';
+import SavingPots from './Pages/SavingPots/savingpots';
+import ContactUs from './Pages/ContactUs/contactUs';
+import ExpenseTacker from './Pages/ExpenseTracker/expenseTracker';
+import Reports from './Pages/Reports/reports'
 import SideMenu from './components/sideMenu';
 
 /** Need to refactor how sideMenu is called so that it doesn't have to be called multiple times  **/
 
 function App() {
-  return (
+const currentUser = false;
+
+  const Layout = () =>{
+    return(
+      <div>
+          <SideMenu />
+          <Outlet />
+      </div>
+    )
+
+  }
+
+  const ProtectedRoute =({children})=>{
+    if(!currentUser){
+        return<Navigate to='/'/>
+      }
+      return children;
+  }
  
-    <Router>
-           
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Login" element={<Login />}/>
-            <Route path="/Registration" element={<Registration/>}/>
-            <Route path="/SavingPots" element={<div>
-              <SideMenu />
-              <SavingPots/>
-            </div>}/>            
-            <Route path="/ExpenseTracker" element={<div>
-              <SideMenu />
-              <ExpenseTacker/>
-            </div> }/>
-            <Route path="/Reports" element={<div>
-              <SideMenu />
-              <Reports />
-            </div>}/>
-            <Route path="/ContactUs" element={<ContactUs/>}/>
-          </Routes>
-    </Router>
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element:<Home />
+    },
+    {
+      path:"/Login",
+      element:<Login />
+    },
+    {
+      path:"/Registration",
+      element:<Registration />
+    },
+    {
+      path:"/",
+      element:<ProtectedRoute> <Layout /> </ProtectedRoute>,
+      children:[
+        {
+          path:"/ExpenseTracker",
+          element:<ExpenseTacker />,
+        },
+        {
+          path:"/SavingPots",
+          element:<SavingPots />,
+        },
+        {
+          path:"/Reports",
+          element:<Reports />,
+        },
+      ]
+    },
+
+  ])
+
+  return ( 
+    
+ <RouterProvider router={(router)}/>
 
   );
 }
 
 export default App;
+
+
+
+

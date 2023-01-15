@@ -1,8 +1,8 @@
 import React from 'react';
-import "../CSS/Site.css";
-import "../CSS/registration.css";
-import LogoBanner from '../components/logoBanner';
-import Button from '../components/button'
+import "../../CSS/Site.css"
+import "../../Pages/Registration/registration.css"
+import LogoBanner from '../../components/logoBanner'
+import Button from '../../components/button'
 import { Link } from 'react-router-dom'
 
 

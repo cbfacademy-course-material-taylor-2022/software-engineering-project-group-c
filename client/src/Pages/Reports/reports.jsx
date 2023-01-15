@@ -1,5 +1,5 @@
 import React from "react";
-import '../CSS/Site.css'
+import "../../CSS/Site.css"
 
 function Reports (props){
     return (

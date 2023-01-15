@@ -1,5 +1,6 @@
 import React from 'react'
-import '../CSS/savingPots.css'
+import "../../CSS/Site.css"
+import '../SavingPots/savingpots.css'
 
 function savingpots() {
   return <>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../CSS/Site.css"
-import "../CSS/Home.css"
+import "../../CSS/Site.css"
+import "../Home/Home.css"
 import * as FavIcons from 'react-icons/fa'
-import LogoBanner from '../components/logoBanner'
-import Button from '../components/button'
+import LogoBanner from '../../components/logoBanner'
+import Button from '../../components/button'
 
 
 const home = () => {
