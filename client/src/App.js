@@ -13,7 +13,7 @@ import SideMenu from './components/sideMenu';
 /** Need to refactor how sideMenu is called so that it doesn't have to be called multiple times  **/
 
 function App() {
-const currentUser = false;
+const currentUser =true;
 
   const Layout = () =>{
     return(
@@ -60,6 +60,10 @@ const currentUser = false;
         {
           path:"/Reports",
           element:<Reports />,
+        },
+        {
+          path:"/ContactUs",
+          element:<ContactUs />
         },
       ]
     },
