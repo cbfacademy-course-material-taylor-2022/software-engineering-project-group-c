@@ -1,0 +1,10 @@
+.amount{
+    background-color: red;
+}
+
+.amount h4{
+    position:absolute;
+    text-align:center;
+     top: 22%;
+     left: 39.2%
+}

@@ -57,7 +57,7 @@ const sideMenu = ({children}) => {
                 ))
               }         
             </div>
-          <main> {children} </main>  
+           
         </div>
       
      )

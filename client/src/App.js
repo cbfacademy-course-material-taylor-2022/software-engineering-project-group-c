@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, Navigate, Outlet, createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Navigate, Outlet, createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './Pages/Home/home';
 import Login from './Pages/Login/login';
 import Registration from './Pages/Registration/registration';
@@ -9,7 +9,7 @@ import ContactUs from './Pages/ContactUs/contactUs';
 import ExpenseTacker from './Pages/ExpenseTracker/expenseTracker';
 import Reports from './Pages/Reports/reports'
 import SideMenu from './components/sideMenu';
-
+import './CSS/Site.css'
 /** Need to refactor how sideMenu is called so that it doesn't have to be called multiple times  **/
 
 function App() {
@@ -17,9 +17,9 @@ const currentUser =true;
 
   const Layout = () =>{
     return(
-      <div>
+       <div>
           <SideMenu />
-          <Outlet />
+          <Outlet /> 
       </div>
     )
 
