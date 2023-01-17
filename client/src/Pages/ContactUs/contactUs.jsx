@@ -11,7 +11,7 @@ function contactUs() {
    <div> 
      <div><Banner name="Contact Us"/></div>
     <div>contactUs</div> 
-    //<div><ChatBotRobot/></div>
+    <div><ChatBotRobot/></div> 
    
     </div>
     </>
