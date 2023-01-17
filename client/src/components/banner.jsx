@@ -3,9 +3,9 @@ import '../CSS/Site.css'
 
 function Banner(props) {
   return (
-    <div className='blnkbanner'>
-    <h1>{props.name}</h1>
-    </div>
+    <div className='Headerbanner'>
+
+     </div>
   )
 }
 

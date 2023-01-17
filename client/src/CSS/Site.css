@@ -60,17 +60,10 @@ margin:0px
     background-color:#E63946 ;
   }
 
-  /*styling for plain banner*/
-  .blnkbanner{
-    display:  inline-flex;
-    background-color:  #1D3557;
-    width: 80%;
-    height: 30%; 
-    margin-left: 16%;
-  }
 
-  /*styling for contact us page*/
-  .pageContainer{
-    display: flex;
-    margin-left: 15%;
-  }
+.container {
+  background-color: rgba(168, 218, 220,.2);
+  width: 100%;
+  height: 100vh;
+}
+
