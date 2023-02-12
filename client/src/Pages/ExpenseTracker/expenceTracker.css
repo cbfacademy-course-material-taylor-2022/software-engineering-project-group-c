@@ -1,18 +1,67 @@
 
-.chartContainer{
-  display: grid;  
-  grid-template-columns: 2fr 1fr;
-  height: auto;
-  margin-top: 3%;
-  gap: 2 ;
-  
+.expenseIncomeContainer{
+  display: flex;  
+  flex-direction: column;
+  width: 70%;
+  height: 80%;
+  margin-left: 22%;
+  margin-top: 1%; 
 }
 
-.Chart{
-
-    
+.visualData {
+  display: flex;  
+  margin-left: 21%;
+  height: 40%;
+  width: 90%;
 }
 
-.labels{
+.incomeExpenseData{
+  display: flex;  
+  height: 100%;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.Chart{ 
+  width: 50%;
+}
+
+.expenseHistory{
+  background-color: rgba(168, 218, 220,.2);
+  width: 50%;
+}
+
+.expenseFormContainer{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+
+.expenseForm   {  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 70%;        
+    padding:20px 20px;
+    background-color: rgba(168, 218, 220,.2);
+    }
+
+.formInput {
+  margin-top: 10%;
+  font-size: large;
+  border:none;
+  width: 50%;
+  border-bottom:  3px solid #F1FAEE;
+  border-radius: 5px;
 
 }
+
+.submitBtn{
+margin-top: 5%;
+}
+
+/* style for expense history*/

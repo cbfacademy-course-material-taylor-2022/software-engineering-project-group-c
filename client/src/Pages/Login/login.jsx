@@ -13,26 +13,27 @@ const login = () => {
         </div>
         <div className='rightContainer'>
           <LogoBanner />
-          <div className='loginForm'>
-            <form>
+          <div className='FormContainer'>
+            <form className='loginForm'>
             <div>
-              <h1>Login</h1>
+              <h1 className='loginFormHeader'>Login</h1>
             </div>
-              <input 
+              <input className='loginFormInput'
               type="text" 
               name="username"
               placeholder='Username'
              />   
-              <input 
+              <input className='loginFormInput'
               type="text" 
               name="password"
               placeholder='Password'
-             />    
-             <Button name="Sign in" />
-             <span>
-             New customer? register <Link to='/Registration'>here</Link>
-
-             </span>
+             />  
+             <div className='loginFormButton'>
+                 <Button name="Sign in" />         
+            </div>  
+            <span className='reroute'>
+                  New customer? register <Link to='/Registration'>here</Link>
+            </span>
             </form>
           </div>
           <div>

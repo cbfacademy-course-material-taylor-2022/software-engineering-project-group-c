@@ -8,42 +8,45 @@ import { Link } from 'react-router-dom'
 
 function Registration() {
 
+
+
+  
   return(
     <div className='mainContainer'>
         <div className='leftContainer'> 
         </div>
         <div className='rightContainer'>
           <LogoBanner />
-          <div className='loginForm'>
-            <form>
+          <div className='FormContainer'>
+            <form className='regForm'>
             <div>
               <h1>Registration</h1>
             </div>
-              <input 
+              <input className='regFormInput'
               type="text" 
               name="firstName"
               placeholder='First Name:'
               />
-              <input 
+              <input className='regFormInput'
               type="text" 
               name="Surname"
               placeholder='Surname:'
              />   
-              <input 
+              <input className='regFormInput'
               type="text" 
               name="email"
               placeholder='Email:'
              />
-              <input 
+              <input className='regFormInput'
               type="text" 
               name="Password"
               placeholder='Password:'
-             />    
+             /> 
+             <div className='regFormButton'   >
              <Button name="Register" />
-             <span>
-             Already have an account? Login <Link to='/Login'>here</Link>
 
-             </span>
+            </div>
+            <span className='reroute'> Already have an account? Login <Link to='/Login'>here</Link></span>
             </form>
           </div>
           <div>

@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.loginForm{
+.loginFormContainer{
 display: flex;
 align-items: center;
 justify-content: center;
@@ -11,29 +11,38 @@ background-color: rgba(168, 218, 220,.2);
 margin-top: 10%;
 margin-left: 30%;
 width: 50%;
+text-align: center;
+
 }
 
-.loginForm form{
+.loginForm{
     display: flex;
     flex-direction: column;    
-    padding:20px 20px;
-    gap: 30px;
+    width: 50%;
+    
 
 }
 
-.loginForm form input {
+.loginFormInput {
     margin-top: 3%;
     font-size: large;
     border:none;
     border-bottom:  3px solid #F1FAEE;
     border-radius: 5px;
+    margin-top: 10%;
+
 }
 
-.loginForm button{
-    margin-left: 15px;    
+.loginFormButton{
+    margin-top: 5%;
 }
 
-.loginForm form h1{
+.loginFormHeader{
     font-weight: 700px;
     text-align: center;
+}
+
+.reroute{
+        padding-bottom: 30px;
+        margin-left: 10%;
 }
