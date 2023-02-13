@@ -21,5 +21,67 @@ Additional feature
 2. contact us
 
 
+# Flow diagram 
+ 
+![Alt text](/relative/path/to/flowchart.png?raw=true "Optional Title")
 
-https://i.imgur.com/pahJGQo.png
+# User Stories
+
+Landing Page:
+
+    - As a: user browsing the web
+
+    - I want to: Enter the url of the website
+
+    - So that I can: read more information and potentially login/register to use it
+
+  Acceptance Criteria/Scenario:
+
+    - Given: I am interested in managing my Personal Finances using digital tools
+
+    - When: I load a new Personal Finance Web Application
+
+    - Then: I can either login if I am an existing user or register if I am a new user
+
+
+Logging in existing user (Feature):
+
+  - As a: an existing user of the web application
+
+  - I want to: fill in my login credentials
+
+  - So that I can: start using the application
+
+  Acceptance Criteria/ Scenario 1 (valid credentials):
+
+    - Given: I am on the login section
+
+    - When: when I attempt to login with valid credentials
+
+    - Then: I will be shown my application dashboard/homepage
+
+  Acceptance Criteria/ Scenario 2 (invalid credentials):
+
+    - Given: I am on the login section
+
+    - When: when I attempt to login with invalid credentials
+
+    - Then: I will be shown a login error message and told to try again
+
+
+Register new user:
+  - As a: new user on a finance web application
+
+  - I want to: be able to see a new user form when the page is loaded
+
+  - So that: I can get ready to fill it in 
+
+ Acceptance Criteria/Scenario:
+
+   - Given: I am on the new user form
+
+   - When: I start to interact with the form 
+
+   - Then: I will be able to see my inputs on the form
+
+
