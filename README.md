@@ -23,7 +23,12 @@ Additional feature
 
 # Flow diagram 
  
-![Alt text](/relative/path/to/flowchart.png?raw=true "Optional Title")
+ ![Screenshot](client/public/imgs/flowchart.png)
+
+# WireFrames
+
+
+
 
 # User Stories
 
@@ -46,11 +51,11 @@ Landing Page:
 
 Logging in existing user (Feature):
 
-  - As a: an existing user of the web application
+    - As a: an existing user of the web application
 
-  - I want to: fill in my login credentials
+    - I want to: fill in my login credentials
 
-  - So that I can: start using the application
+    - So that I can: start using the application
 
   Acceptance Criteria/ Scenario 1 (valid credentials):
 
@@ -69,19 +74,97 @@ Logging in existing user (Feature):
     - Then: I will be shown a login error message and told to try again
 
 
-Register new user:
-  - As a: new user on a finance web application
+Navigate to registration Form:
+    - As a: new user on a finance web application
 
-  - I want to: be able to see a new user form when the page is loaded
+    - I want to: be able to see a new user form when the page is loaded
 
-  - So that: I can get ready to fill it in 
+    - So that: I can get ready to fill it in 
 
  Acceptance Criteria/Scenario:
 
-   - Given: I am on the new user form
+    - Given: I am on the new user form
 
-   - When: I start to interact with the form 
+    - When: I start to interact with the form 
 
-   - Then: I will be able to see my inputs on the form
+    - Then: I will be able to see my inputs on the form
+
+
+Register new user
+
+    - As a: new user on a finance web application
+
+    - I want to: be able to fill in the  registration form
+
+    - So that: I can click the submit button to complete registation
+
+  Acceptance Criteria/Scenario 1 (filling in form correctly):
+
+    - Given: I fill in each input field correctly
+
+    - When: I press the “submit/complete registration” button
+
+    - Then: I will get a message to tell me my registration was successful (validation)
+
+  Acceptance Criteria/Scenario 2 (filling in form incorrectly):
+
+    - Given: I fill any input field incorrectly
+
+    - When: I press the “submit/complete registration” button
+
+    - Then: I will get a message to tell me my registration was unsuccessful
+
+Expense Tracker
+
+    - As a: valid user
+
+    - I want to: be able to enter my expenses/income 
+  
+    - So that I can: keep track of my expenses 
+
+  Acceptance Criteria:
+
+    - Given that: the user navigate to the expense tracker page 
+
+    - When: income/expense have been entered, the entry should appear in the history section and update current balance
+
+    - So that I can: visually keep track of my expenditure 
+
+
+reports:
+
+    - As a: Registered user of the app trying to keep track of my spending
+
+    - I want to: be able to look at what my spending trends have been over a certain period of time
+
+    - So that I can: look at planning my finances better for the future
+
+  Acceptance Criteria:
+
+    - Given that:The user is trying to look at their spend over a period of time
+
+    - When:They got to the reporting function, they are able to access and read the data pulled from their spending habits
+
+    - So that I can:Plan my upcoming income and expenditure
+
+
+
+Tips: 
+    - As a: App user
+
+    - I want to: be able to get tips on how to use my money better for my family and I
+    
+    - So that I can: make better financial decisions 
+  Acceptance Criteria:
+
+    - Given that:The user is looking for useful tips on how to save and use money more effectively 
+
+    - When:The tips come up they are able to be easily understood and expanded on
+
+    - So that I can:use the information to make informed financial decisions 
+
+
+
+
 
 
