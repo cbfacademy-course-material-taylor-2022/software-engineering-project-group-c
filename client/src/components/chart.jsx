@@ -5,7 +5,7 @@ import '../CSS/chart.css'
 import '../CSS/Site.css'
 import Labels from '../components/labels'
 
-Chart.register(ArcElement, Tooltip, Legend)
+Chart.register(ArcElement)
 
 const config = {
   data: {

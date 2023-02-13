@@ -20,15 +20,35 @@ Additional feature
 1. chatbot
 2. contact us
 
+![Screenshot](client/public/imgs/md/Checklist.png)
 
 # Flow diagram 
  
- ![Screenshot](client/public/imgs/flowchart.png)
+ ![Screenshot](client/public/imgs/md/flowchart.png)
 
 # WireFrames
 
+![Screenshot](client/public/imgs/md/home.png)
 
+![Screenshot](client/public/imgs/md/loginform.png)
 
+![Screenshot](client/public/imgs/md/invalid_login.png)
+
+![Screenshot](client/public/imgs/md/sucessful.png)
+
+![Screenshot](client/public/imgs/md/regform.png)
+
+![Screenshot](client/public/imgs/md/invalid.png)
+
+![Screenshot](client/public/imgs/md/dashboard.png)
+
+![Screenshot](client/public/imgs/md/expensetracker.png)
+
+![Screenshot](client/public/imgs/md/saving%20pots.png)
+
+![Screenshot](client/public/imgs/md/reports.png)
+
+![Screenshot](client/public/imgs/md/contact.png)
 
 # User Stories
 
