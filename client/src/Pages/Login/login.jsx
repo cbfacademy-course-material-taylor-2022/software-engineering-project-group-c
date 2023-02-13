@@ -24,7 +24,7 @@ const login = () => {
               placeholder='Username'
              />   
               <input className='loginFormInput'
-              type="text" 
+              type="password" 
               name="password"
               placeholder='Password'
              />  
