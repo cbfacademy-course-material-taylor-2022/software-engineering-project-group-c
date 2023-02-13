@@ -61,9 +61,28 @@ margin:0px
   }
 
 
-.container {
+ /*Container style for all pages once logged on*/ 
+.pagecontainer {
   background-color: rgba(168, 218, 220,.2);
   width: 100%;
   height: 100vh;
+  padding: 0px;
+margin:0px
 }
 
+
+
+/*Title banner label*/ 
+.bannerTitle{
+  display: flex;
+  margin: 0;
+  color:#F1FAEE ;
+  font-size: 60px;
+  justify-content: center;
+}
+
+/*Title banner background*/ 
+.header{
+  background-color:  #1D3557;
+  height: 12%;
+}
