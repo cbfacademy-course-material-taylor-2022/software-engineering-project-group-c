@@ -1,12 +1,13 @@
 import React from 'react'
-import {Chart,ArcElement} from 'chart.js'
+import {Chart,ArcElement, Legend, Tooltip} from 'chart.js'
 import {Doughnut} from 'react-chartjs-2'
 import '../CSS/chart.css'
 
-Chart.register(ArcElement)
+Chart.register(ArcElement, Tooltip, Legend)
 
 const config = {
   data: {
+    labels: ['travel','Bills'],
       datasets: [{
       data: [300,100],
       backgroundColor: [
