@@ -1,28 +1,59 @@
 import React from 'react'
 import ChatBotRobot from '../../components/Chatbotcomponent'
-import Banner from '../../components/banner'
-import "../../CSS/Site.css"
+import '../ContactUs/contactUs.css'
+import { useForm } from 'react-hook-form'
 
+import { useState } from 'react';
 
+export default function App() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [message, setMessage] = useState('');
 
-function contactUs() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    setMessage(`Hello ${firstName} ${lastName}!`);
+    setFirstName('');
+    setLastName('');
+  };
+
   return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        value={firstName}
+        placeholder="First Name"
+        onChange={(event) =>
+          setFirstName(event.target.value)
+        }
+      />
 
-    <> 
-   <div>
-    <div className='FormContainer'>
-      
-      </div> 
-     <div><Banner name="Contact Us"/></div>
-    <div>contactUs</div> 
-    <div><ChatBotRobot/></div> 
-   
-    </div>
-    </>
+      <br />
+      <br />
 
- 
-  )
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        value={lastName}
+        placeholder="Last Name"
+        onChange={(event) => {
+          setLastName(event.target.value);
+        }}
+      />
+
+      <br />
+      <br />
+
+      <button type="submit">Submit</button>
+
+      <br />
+      <br />
+
+      <h2>{message}</h2>
+    </form>
+  );
 }
-
-export default contactUs
-
