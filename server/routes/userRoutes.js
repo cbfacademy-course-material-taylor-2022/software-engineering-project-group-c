@@ -12,9 +12,9 @@ const userRoutes = (app) => {
   //@access Private
   app.post(`/api/register`, async (req,res)=>{
     //destruct
-    const {first_name, last_name, email, password} = req.body
+    const {firstName, lastName, email, password} = req.body
     //
-    if (!first_name || !last_name || !email || !password){
+    if (!firstName || !lastName || !email || !password){
       res.status(400)
       throw new Error('Please add all fields')
     }
@@ -31,8 +31,8 @@ const userRoutes = (app) => {
 
     //create user
     const user = await User.create({
-      first_name,
-      last_name,
+      firstName,
+      lastName,
       email,
       password: hashedPassword
     })
@@ -40,8 +40,8 @@ const userRoutes = (app) => {
     if(user){
       res.status(201).json({
         _id: user.id,
-        first_name: user.first_name,
-        last_name: user.last_name,
+        firstName: user.firstName,
+        lastName: user.lastName,
         email: user.email,
         token: generateToken(user._id)
       })

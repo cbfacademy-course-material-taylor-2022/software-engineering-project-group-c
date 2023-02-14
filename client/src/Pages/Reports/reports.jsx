@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useState, useEffect } from "react";
 import "../../CSS/Site.css"
 import Chart from "../../components/chart"
 import { Data } from "../../utils/data";
@@ -8,7 +8,7 @@ function Reports (props){
 
     return (
     
-        <div className='container'>
+        <div className='pagecontainer'>
         <div className='header'> Header</div>
         
          <div className='chartContainer'>

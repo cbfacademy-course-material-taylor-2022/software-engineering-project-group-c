@@ -10,6 +10,9 @@ module.exports = function override(config, env) {
         https: require.resolve('https-browserify'),
         os: require.resolve('os-browserify/browser'),
         buffer: require.resolve('stream-browserify'),
+        zlib: require.resolve("browserify-zlib"),
+        querystring: false,
+        zlib: false,
     };
 
     config.plugins.push(
