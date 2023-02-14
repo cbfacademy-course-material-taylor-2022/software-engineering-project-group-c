@@ -12,7 +12,7 @@ import {
 function Chart ({title, data, dataKey, grid}) {
     return (
      <div className="chart">
-     <h3 className="chartTitle">{userData.name}'s Member's Dashboard</h3>
+     <h3 className="chartTitle">Sharrel's Member's Dashboard</h3>
      <ResponsiveContainer width="100%" aspect={4/1}>
         <LineChart data={data}>
             <XAxis dataKey="Account Balance" stroke="#E65946"/>

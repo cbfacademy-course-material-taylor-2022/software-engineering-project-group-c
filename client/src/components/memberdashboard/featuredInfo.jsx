@@ -25,6 +25,20 @@ function featuredInfo() {
             </div>
             <span className="featuredSub">Compared to last month</span>
         </div>
+        
+        <div className="featuredItem">
+            <span className="featuredTitle">Savings</span>
+            <div className="featuredMoneyContainer">
+                <span className="featuredMoney">£200</span>
+                <span className="featuredMoneyRate">
+                    +1.3 <ArrowUpward className="featureIcon positive"/> 
+                </span>
+            </div>
+            <span className="featuredSub">Compared to last month</span>
+        </div>
+        /</div>
 
-    )
+    );
 }
+
+export default featuredInfo;
