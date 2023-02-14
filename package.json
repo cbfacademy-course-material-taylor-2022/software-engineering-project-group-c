@@ -30,7 +30,9 @@
     "react-bootstrap": "^2.7.2",
     "react-chat-window": "^1.2.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1"
+    "react-hook-form": "^7.43.1",
+    "react-icons": "^4.7.1",
+    "react-use-navigate": "^0.1.1"
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
