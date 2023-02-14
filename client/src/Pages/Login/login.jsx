@@ -4,8 +4,24 @@ import "../../Pages/Login/login.css"
 import LogoBanner from '../../components/logoBanner'
 import Button from '../../components/button'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+import { userLogin } from "../../services/loginService";
 
-const login = () => {
+const Login = () => {
+
+  const {register, handleSubmit} = useForm()
+
+  const navigate = useNavigate();
+
+  const onSubmit = async (formValues) => {
+    // console.log(firstName)
+    const user =  await userLogin(formValues.email, formValues.password);
+    if (user === "success") {
+      navigate("/ExpenseTracker");
+      
+  }
+}
 
  return (
     <div className='mainContainer'>
@@ -14,18 +30,18 @@ const login = () => {
         <div className='rightContainer'>
           <LogoBanner />
           <div className='FormContainer'>
-            <form className='loginForm'>
+            <form className='loginForm' onSubmit={handleSubmit(onSubmit)}>
             <div>
               <h1 className='loginFormHeader'>Login</h1>
             </div>
               <input className='loginFormInput'
-              type="text" 
-              name="username"
-              placeholder='Username'
+              type="email" 
+              {...register('email')}
+              placeholder='Email'
              />   
               <input className='loginFormInput'
               type="password" 
-              name="password"
+              {...register('password')}
               placeholder='Password'
              />  
              <div className='loginFormButton'>
@@ -43,4 +59,4 @@ const login = () => {
     </div>
   )}
 
-export default login
+export default Login

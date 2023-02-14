@@ -6,17 +6,13 @@ import Button from '../../components/button'
 import { Link } from 'react-router-dom'
 import { registerUser } from "../../services/userService";
 
-
-
 function Registration() {
  
   const {register, handleSubmit} = useForm()
 
-
   const onSubmit = async (formValues) => {
-   // console.log(firstName)
-
-  const createUser =  await registerUser(formValues.firstName, formValues.lastName, formValues.email, formValues.password);
+    // console.log(firstName)
+    const createUser =  await registerUser(formValues.firstName, formValues.lastName, formValues.email, formValues.password);
     if (createUser === "success") {
       alert("Account Successfully Created");
   }

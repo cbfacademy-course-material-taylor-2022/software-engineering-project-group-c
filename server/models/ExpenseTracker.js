@@ -3,6 +3,7 @@ const { Schema } = mongoose;
 
 const ExpenseTrackerSchema = new Schema({
   first_name: String,
+  
 
 });
 
