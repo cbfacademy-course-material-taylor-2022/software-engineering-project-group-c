@@ -1,9 +1,10 @@
 import React from 'react'
+import '../CSS/Site.css'
 
-const button = () => {
+function button(props) {
   return (
-    <div>button</div>
+    <button className='btn'> {props.name} </button>
   )
 }
 
-export default button
+export default button;

@@ -1,0 +1,53 @@
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.FormContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(168, 218, 220,.2);
+margin-top: 15%;
+margin-left: 30%;
+width: 50%;
+height: 40%;
+text-align: center;
+
+}
+
+.regForm{
+    display: flex;
+    flex-direction: column;    
+    width: 50%;
+    
+
+}
+
+.regFormInput {
+
+    width: 60%;
+    margin-top: 3%;
+    font-size: large;
+    border:none;
+    border-bottom:  3px solid #F1FAEE;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5%;
+
+}
+
+.regFormButton{
+    margin-top: 5%;
+    margin-left: 50px;    
+}
+
+.regFormHeader{
+    font-weight: 700px;
+    text-align: center;
+}
+
+.reroute{
+    margin-top: 5%;
+    
+}

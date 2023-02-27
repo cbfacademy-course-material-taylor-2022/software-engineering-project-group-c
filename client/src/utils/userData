@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63e2b108358982bb0e89c2c2"
+  },
+  "First Name": "Julie",
+  "Last Name": "Miles",
+  "Email": "jmiles87@gmail.com",
+  "Password": "Telephone01"
+},{
+  "_id": {
+    "$oid": "63e2b108358982bb0e89c2c3"
+  },
+  "First Name": "Mark",
+  "Last Name": "Ray",
+  "Email": "mray398@outlook.com",
+  "Password": "Dazed98"
+},{
+  "_id": {
+    "$oid": "63e2b108358982bb0e89c2c4"
+  },
+  "First Name": "Valentina",
+  "Last Name": "Hall",
+  "Email": "starstripes@gmail.com",
+  "Password": "Unicorn980"
+},{
+  "_id": {
+    "$oid": "63e2b108358982bb0e89c2c5"
+  },
+  "First Name": "Lori",
+  "Last Name": "Jordan",
+  "Email": "lorijordan@ymail.com",
+  "Password": "Dukehazard910"
+}]

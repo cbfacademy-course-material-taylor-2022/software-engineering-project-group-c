@@ -8,25 +8,81 @@ margin:0px
 .mainContainer {
     background-color: white ;
     display: flex;
-    height:100vh;
-    
+    min-height: 100vh;
+    width:100%;
    }
    /* 
    Control the left side */
    .leftContainer {
-    background-color: #A8DADC ;
+    background-color: #1D3557;
     float: left;
     width: 50%;
     height:auto;
-    
-
    }
 
    /* Control the right side */
    .rightContainer {
-    background-color: #F1FAEE ;
+    background-color: white ;
     float: right;
     width: 50%;
     height:auto;
    }
+   
+/*Logo container banner setup  */
+    .logo{
+    display:  inline-flex;
+    background-color:  #1D3557;
+    width: 100%;
+    height: 30%;
+    }
 
+/*Logo banner setup  */
+   .imglogo{
+    margin-top: 1.5%;
+    height: 90%;
+    width: 30%;
+    }
+/*styling for all buttons*/ 
+  .btn {  
+    background-color: #457B9D;
+    color: white;
+    font-size: 16px; 
+    height: 60px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;  
+  }
+  
+  /*styling for all buttons*/ 
+  .btn:hover{
+    background-color:#E63946 ;
+  }
+
+
+ /*Container style for all pages once logged on*/ 
+.pagecontainer {
+  background-color: rgba(168, 218, 220,.2);
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+margin:0px
+}
+
+
+
+/*Title banner label*/ 
+.bannerTitle{
+  display: flex;
+  margin: 0;
+  color:#F1FAEE ;
+  font-size: 60px;
+  justify-content: center;
+}
+
+/*Title banner background*/ 
+.header{
+  background-color:  #1D3557;
+  height: 12%;
+}

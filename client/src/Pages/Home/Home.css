@@ -1,0 +1,66 @@
+/*****Home layout *****/
+.tracker, .savingPots, .Reports, .Tips{
+ 
+  text-align: center;
+  display:  inline-flex;
+  width: 45%;
+  margin-left: 5%;
+  margin-top: 2%;
+
+}
+
+img {
+  width: 90%;
+  height: 90%;
+  border-radius:10px;
+}
+
+.featuresTitle {
+  color: #F1FAEE;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.contactRouteLink{
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 40%;
+}
+
+.loginRouteLink{
+  margin-top: 20%;
+  margin-left:40% ;
+  width: 50%;
+  padding: 3%;
+  border-radius: 30px;
+}
+
+.regRouteLink{
+  margin-left:40% ;
+  width: 50%;
+  padding: 3%;
+  border-radius: 30px;
+
+}
+
+.logoSlogan{
+  padding-top: 10%;
+  margin-left: 2%;
+  font-size: 200%;
+}
+
+p{
+  color: #F1FAEE;
+}
+
+.homeIcons{
+  margin-top: 15%;
+  margin-left: 48%;
+  width: 50%;
+  font-size: 250%;
+  color: #457B9D;
+}
+
+.icons:hover{
+  color: #E63946;
+}

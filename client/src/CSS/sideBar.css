@@ -1,0 +1,48 @@
+
+
+.sideBar{
+    background-color: #1D3557;
+    float: left;
+    width: 15%;
+    height:100vh;
+
+}
+
+.menuLogo{
+   display: flex ;
+   width: 100%;
+   padding-bottom: 1rem;
+}
+
+.navLogo{
+    width: 100%;
+}
+
+.welcome{
+    width: 100%;
+    text-align: center;
+    color: #F1FAEE;
+    padding-bottom: 10%;
+}
+
+
+.link{
+    display: flex;
+    color: #F1FAEE;
+    text-decoration: none;
+    padding: 10px 15px;
+    gap :15px;
+    transition:  all 0.5s;
+}
+
+.link:hover{
+    background-color: #E63946;
+}
+
+.active{
+    background-color: #E63946;
+}
+
+.icon, .link_name{
+    font-size: 20px;
+}

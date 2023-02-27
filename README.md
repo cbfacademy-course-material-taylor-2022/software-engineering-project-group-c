@@ -1,104 +1,190 @@
-# MERN Stack Project
+# Trello Board Link
+https://trello.com/b/lyNgMtuo/finance-app
 
-Here's some boilerplate code with the initial setup for your project.
 
-The expectation with this code is that you're able to clone the repository and get started building your own fullstack ([MERN](https://www.mongodb.com/mern-stack)) application.
+# Miro Board
 
-- [Project Structure](#project-structure)
-  - [Client](#client)
-  - [Server](#server)
-- [Getting Started](#getting-started)
-  - [Populating The Database](#populating-the-database)
-  - [Starting The Development Server](#starting-the-development-server)
-  - [Example Application](#example-application)
-- [What's Next?!](#whats-next)
+https://miro.com/app/board/uXjVP5DcLAI=/ 
 
-## Project Structure
+This board contains our wireframes, colour palette choice & logo samples
 
-The initial structure of the repository is:
+# Key Features 
 
-```plain
-- README.md
-- client/
-  - public/
-  - src/
-    - services/
-    - index.js
-    - App.js
-  - README.md
-- server/
-  - data/
-  - models/
-  - routes/
-  - index.js
-  - README.md
-```
+1. Landing page introducing application
+2. register and login
+3. track expenses
+4. create saving pots
+5. Reports 
 
-### Client
+Additional feature
+1. chatbot
+2. contact us
 
-The client folder is where you will store your front end code. Currently this contains a new project created with `create-react-app` and an example of how to call an API that's in active development.
+![Screenshot](client/public/imgs/md/Checklist.png)
 
-✋🏾 **Put your React code here** ✋🏾
+# Flow diagram 
+ 
+ ![Screenshot](client/public/imgs/md/flowchart.png)
 
-Read the `client/` [README](./client/README.md) for more details of the example front end app provided
+# WireFrames
 
-### Server
+![Screenshot](client/public/imgs/md/home.png)
 
-The server folder is where you will store your backend code. You'll be building your API and making queries to your database here.
+![Screenshot](client/public/imgs/md/loginform.png)
 
-✋🏾 **Put your Node code here**✋🏾
+![Screenshot](client/public/imgs/md/invalid_login.png)
 
-Read the `server/` [README](./server/README.md) for more details of the example API provided
+![Screenshot](client/public/imgs/md/sucessful.png)
 
-## Getting Started
+![Screenshot](client/public/imgs/md/regform.png)
 
-### Environment variables
+![Screenshot](client/public/imgs/md/invalid.png)
 
-We have provided you with an example environment variables file called [`.env.example`](./.env.example). Rename this file to `.env` to use it.
+![Screenshot](client/public/imgs/md/dashboard.png)
 
-In here you should assign your database connection string to the `DATABASE_CONNECTION_STRING` variable.
+![Screenshot](client/public/imgs/md/expensetracker.png)
 
-Make sure your connection string has the correct database name you are trying to connect to and follows this format:
+![Screenshot](client/public/imgs/md/saving%20pots.png)
 
-```plain
-mongodb+srv://<username>:<password>@cluster0.7k5er.mongodb.net/<database_name>
-```
+![Screenshot](client/public/imgs/md/reports.png)
 
-For the example app the database name is `example_db`.
+![Screenshot](client/public/imgs/md/contact.png)
 
-You'll also see the `PORT` for your API in this file. Do not change this `PORT` number.
+# User Stories
 
-🛑 **YOUR ENVIRONMENT VARIABLES SHOULD NEVER BE COMMITED AND THE `.env` FILE HAS ALREADY BEEN ADDED TO THE [`.gitignore`](./.gitignore).** 🛑
+Landing Page:
 
-### Populating The Database
+    - As a: user browsing the web
 
-If you choose to populate your database with some initial data you can do so using seed data. We have provided an example of seed data in the [`data.example/`](./server/data.example) folder in a file called [`profiles.mongodb`](server/data.example/profiles.mongodb).
+    - I want to: Enter the url of the website
 
-All you need to do is rename the `data.example` folder to `data` and then create a `.mongodb` file that will create and insert data into your database and the correct collection(s).
+    - So that I can: read more information and potentially login/register to use it
 
-To get the example app up and running you need to create an `example_db` database, a `profiles` collection and inserting some profile data. This can all be done by running the [`profiles.mongodb`](server/data.example/profiles.mongodb) file in your MongoDB playground.
+  Acceptance Criteria/Scenario:
 
-If successful you should see 4 documents in your newly created `profiles` collection, in your new `example_db` database.
+    - Given: I am interested in managing my Personal Finances using digital tools
 
-🛑 **YOU SHOULD NOT COMMIT YOUR INITIAL DATA. THE `data/`FOLDER HAS ALREADY BEEN ADDED TO THE [`.gitignore`](./.gitignore).** 🛑
+    - When: I load a new Personal Finance Web Application
 
-### Starting The Development Server
+    - Then: I can either login if I am an existing user or register if I am a new user
 
-You can start the client side code (front-end) and server side (back-end) separately using the commands in their respective folders. If you prefer to start them all together (this is the most convienient way), you can do so with the following commands:
 
-1. `npm run dev-install` to install all the dependencies
-2. `npm run develop` to start the development servers - [localhost:3000](http://localhost:3000) for front end and [localhost:8080](http://localhost:8080)
+Logging in existing user (Feature):
 
-Please note that you will only need to run `npm run dev-install` once during your first installation, subsequently you will only need to run `npm run develop` to get your development environment up and running.
+    - As a: an existing user of the web application
 
-When making file changes to either your front or back end code your app will automatically restart and reload for you.
+    - I want to: fill in my login credentials
 
-### Example Application
+    - So that I can: start using the application
 
-We have created an example application that will display a list of profiles that are stored in the `example_db` database.
+  Acceptance Criteria/ Scenario 1 (valid credentials):
 
-If all's well with the above steps, you should see a list of familiar names. If your browser shows "No profiles found", re-check all the steps to ensure your database is populated and everything is connected properly.
+    - Given: I am on the login section
 
-## What's Next?!
+    - When: when I attempt to login with valid credentials
 
-Now it's time to start building your project.
+    - Then: I will be shown my application dashboard/homepage
+
+  Acceptance Criteria/ Scenario 2 (invalid credentials):
+
+    - Given: I am on the login section
+
+    - When: when I attempt to login with invalid credentials
+
+    - Then: I will be shown a login error message and told to try again
+
+
+Navigate to registration Form:
+    - As a: new user on a finance web application
+
+    - I want to: be able to see a new user form when the page is loaded
+
+    - So that: I can get ready to fill it in 
+
+ Acceptance Criteria/Scenario:
+
+    - Given: I am on the new user form
+
+    - When: I start to interact with the form 
+
+    - Then: I will be able to see my inputs on the form
+
+
+Register new user
+
+    - As a: new user on a finance web application
+
+    - I want to: be able to fill in the  registration form
+
+    - So that: I can click the submit button to complete registation
+
+  Acceptance Criteria/Scenario 1 (filling in form correctly):
+
+    - Given: I fill in each input field correctly
+
+    - When: I press the “submit/complete registration” button
+
+    - Then: I will get a message to tell me my registration was successful (validation)
+
+  Acceptance Criteria/Scenario 2 (filling in form incorrectly):
+
+    - Given: I fill any input field incorrectly
+
+    - When: I press the “submit/complete registration” button
+
+    - Then: I will get a message to tell me my registration was unsuccessful
+
+Expense Tracker
+
+    - As a: valid user
+
+    - I want to: be able to enter my expenses/income 
+  
+    - So that I can: keep track of my expenses 
+
+  Acceptance Criteria:
+
+    - Given that: the user navigate to the expense tracker page 
+
+    - When: income/expense have been entered, the entry should appear in the history section and update current balance
+
+    - So that I can: visually keep track of my expenditure 
+
+
+reports:
+
+    - As a: Registered user of the app trying to keep track of my spending
+
+    - I want to: be able to look at what my spending trends have been over a certain period of time
+
+    - So that I can: look at planning my finances better for the future
+
+  Acceptance Criteria:
+
+    - Given that:The user is trying to look at their spend over a period of time
+
+    - When:They got to the reporting function, they are able to access and read the data pulled from their spending habits
+
+    - So that I can:Plan my upcoming income and expenditure
+
+
+
+Tips: 
+    - As a: App user
+
+    - I want to: be able to get tips on how to use my money better for my family and I
+    
+    - So that I can: make better financial decisions 
+  Acceptance Criteria:
+
+    - Given that:The user is looking for useful tips on how to save and use money more effectively 
+
+    - When:The tips come up they are able to be easily understood and expanded on
+
+    - So that I can:use the information to make informed financial decisions 
+
+
+
+
+
+
